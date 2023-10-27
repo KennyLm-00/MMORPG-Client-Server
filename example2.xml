@@ -1,0 +1,409 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<interface>
+  <requires lib="gtk+" version="3.0"/>
+  <object class="GtkWindow" id="window">
+    <property name="can_focus">False</property>
+    <property name="default_width">400</property>
+    <property name="default_height">1000</property>
+    <child>
+     <object class="GtkScrolledWindow" id="scrolled_window">
+        <property name="visible">True</property>
+        <property name="can_focus">False</property>
+        <property name="hscrollbar_policy">never</property>
+    <child>
+      <object class="GtkBox" id="box">
+        <property name="visible">True</property>
+        <property name="can_focus">False</property>
+        <property name="orientation">vertical</property>
+        <!-- <child>
+          <object class="GtkLabel" id="connect_label">
+            <property name="visible">True</property>
+            <property name="can_focus">False</property>
+             <property name="width_request">100</property>
+            <property name="height_request">20</property>
+            <property name="label">Enter in hostname and port!</property>
+          </object>
+        </child>
+        <child>
+          <object class="GtkEntry" id="hostname_entry">
+            <property name="visible">True</property>
+            <property name="can_focus">True</property>
+            <property name="hexpand">True</property>
+            <property name="vexpand">False</property>
+            <property name="placeholder_text">Hostname</property>
+          </object>
+        </child>
+        <child>
+          <object class="GtkEntry" id="port_entry">
+            <property name="visible">True</property>
+            <property name="can_focus">True</property>
+            <property name="hexpand">True</property>
+            <property name="vexpand">False</property>
+            <property name="placeholder_text">Port</property>
+          </object>
+        </child>
+   <child> -->
+     <child>
+          <object class="GtkLabel" id="creation_label">
+             <property name="visible">True</property>
+            <property name="can_focus">False</property>
+             <property name="width_request">100</property>
+            <property name="height_request">50</property>
+            <property name="label">Kennys Client!</property>
+          </object>
+        </child>
+   <child>
+     <object class="GtkBox" id="connect_box">
+    <property name="visible">True</property>
+    <property name="can_focus">False</property>
+    <property name="orientation">horizontal</property>
+     <child>
+          <object class="GtkEntry" id="hostname_entry">
+            <property name="visible">True</property>
+            <property name="can_focus">True</property>
+            <property name="hexpand">True</property>
+            <property name="vexpand">False</property>
+            <property name="placeholder_text">Host Name</property>
+          </object>
+        </child>
+         <child>
+          <object class="GtkEntry" id="port_entry">
+            <property name="visible">True</property>
+            <property name="can_focus">True</property>
+            <property name="hexpand">True</property>
+            <property name="vexpand">False</property>
+            <property name="placeholder_text">Port</property>
+          </object>
+        </child>
+    <child>
+      <object class="GtkButton" id="connect_button">
+        <property name="label">Connect</property>
+        <property name="visible">True</property>
+        <property name="can_focus">True</property>
+        <property name="halign">center</property>
+        <property name="valign">center</property>
+        <property name="hexpand">False</property>
+        <property name="vexpand">False</property>
+        <property name="width_request">100</property>
+        <property name="height_request">20</property>
+      </object>
+    </child> 
+      </object>
+        </child>
+        <child>
+          <object class="GtkEntry" id="player_name">
+            <property name="visible">True</property>
+            <property name="can_focus">True</property>
+            <property name="hexpand">True</property>
+            <property name="vexpand">False</property>
+            <property name="placeholder_text">Player Name</property>
+          </object>
+        </child>
+          <child>
+          <object class="GtkEntry" id="player_flags">
+            <property name="visible">True</property>
+            <property name="can_focus">True</property>
+            <property name="hexpand">True</property>
+            <property name="vexpand">False</property>
+            <property name="placeholder_text">Flags</property>
+          </object>
+        </child>
+         <child>
+          <object class="GtkEntry" id="player_attack">
+            <property name="visible">True</property>
+            <property name="can_focus">True</property>
+            <property name="hexpand">True</property>
+            <property name="vexpand">False</property>
+            <property name="placeholder_text">Attack</property>
+          </object>
+        </child>
+        <child>
+          <object class="GtkEntry" id="player_defense">
+            <property name="visible">True</property>
+            <property name="can_focus">True</property>
+            <property name="hexpand">True</property>
+            <property name="vexpand">False</property>
+            <property name="placeholder_text">Defense</property>
+          </object>
+        </child>
+          <child>
+          <object class="GtkEntry" id="player_regen">
+            <property name="visible">True</property>
+            <property name="can_focus">True</property>
+            <property name="hexpand">True</property>
+            <property name="vexpand">False</property>
+            <property name="placeholder_text">Regen</property>
+          </object>
+        </child>
+        <child>
+          <object class="GtkEntry" id="player_description">
+            <property name="visible">True</property>
+            <property name="can_focus">True</property>
+            <property name="hexpand">True</property>
+            <property name="vexpand">False</property>
+            <property name="placeholder_text">Description</property>
+          </object>
+        </child>        
+        <!--START OF START GAME BUTTONS-->
+          <child>
+     <object class="GtkBox" id="start_box">
+    <property name="visible">True</property>
+    <property name="can_focus">False</property>
+    <property name="orientation">horizontal</property>
+     <property name="halign">center</property>
+    <property name="valign">center</property>
+     <child>
+          <object class="GtkButton" id="make_character">
+            <property name="label">Create</property>
+            <property name="visible">True</property>
+            <property name="can_focus">True</property>
+            <property name="halign">center</property>
+            <property name="valign">center</property>
+            <property name="hexpand">False</property>
+            <property name="vexpand">False</property>
+            <property name="width_request">100</property>
+            <property name="height_request">20</property>
+          </object>
+        </child>
+    <child>
+          <object class="GtkButton" id="start_game">
+              <property name="label">START</property>
+              <property name="visible">True</property>
+              <property name="can_focus">True</property>
+              <property name="halign">center</property>
+              <property name="valign">center</property>
+              <property name="hexpand">False</property>
+              <property name="vexpand">False</property>
+              <property name="width_request">100</property>
+              <property name="height_request">20</property>
+          </object>
+        </child>
+
+      </object>
+        </child>
+    <child>
+     <object class="GtkBox" id="button_box">
+    <property name="visible">True</property>
+    <property name="can_focus">False</property>
+    <property name="orientation">horizontal</property>
+     <child>
+          <object class="GtkEntry" id="room_number">
+            <property name="visible">True</property>
+            <property name="can_focus">True</property>
+            <property name="hexpand">True</property>
+            <property name="vexpand">False</property>
+            <property name="placeholder_text">Room Number</property>
+          </object>
+        </child>
+    <child>
+        <object class="GtkButton" id="change_room">
+            <property name="label">Change</property>
+            <property name="visible">True</property>
+            <property name="can_focus">True</property>
+            <property name="halign">center</property>
+            <property name="valign">center</property>
+            <property name="hexpand">False</property>
+            <property name="vexpand">False</property>
+            <property name="width_request">100</property>
+            <property name="height_request">20</property>
+        </object>
+    </child> 
+      </object>
+        </child>
+    <child>
+     <object class="GtkBox" id="message_box">
+    <property name="visible">True</property>
+    <property name="can_focus">False</property>
+    <property name="orientation">horizontal</property>
+         <child>
+          <object class="GtkEntry" id="sender_name">
+            <property name="visible">True</property>
+            <property name="can_focus">True</property>
+            <property name="hexpand">True</property>
+            <property name="vexpand">False</property>
+            <property name="placeholder_text">Sender Name</property>
+          </object>
+        </child>
+     <child>
+          <object class="GtkEntry" id="message_name">
+            <property name="visible">True</property>
+            <property name="can_focus">True</property>
+            <property name="hexpand">True</property>
+            <property name="vexpand">False</property>
+            <property name="placeholder_text">Reciever Name</property>
+          </object>
+        </child>
+         <child>
+          <object class="GtkEntry" id="sendit">
+            <property name="visible">True</property>
+            <property name="can_focus">True</property>
+            <property name="hexpand">True</property>
+            <property name="vexpand">False</property>
+            <property name="placeholder_text">Message</property>
+          </object>
+        </child>
+    <child>
+        <object class="GtkButton" id="send_message">
+            <property name="label">Send</property>
+            <property name="visible">True</property>
+            <property name="can_focus">True</property>
+            <property name="halign">center</property>
+            <property name="valign">center</property>
+            <property name="hexpand">False</property>
+            <property name="vexpand">False</property>
+            <property name="width_request">100</property>
+            <property name="height_request">20</property>
+        </object>
+    </child> 
+      </object>
+        </child>
+    <child>
+     <object class="GtkBox" id="fight_box">
+    <property name="visible">True</property>
+    <property name="can_focus">False</property>
+    <property name="orientation">horizontal</property>
+     <property name="halign">center</property>
+  <property name="valign">center</property>
+  <child>
+      <object class="GtkFrame" id="player">
+        <property name="visible">True</property>
+        <property name="label">Player</property>
+        <child>
+          <object class="GtkTextView" id="playerhere">
+            <property name="visible">True</property>
+            <property name="can_focus">True</property>
+            <property name="hexpand">False</property>
+            <property name="vexpand">False</property>
+            <property name="width-request">200</property>
+            <property name="height-request">10</property>
+          </object>
+        </child>
+      </object>
+    </child>
+     <child>
+      <object class="GtkFrame" id="messages">
+        <property name="visible">True</property>
+        <property name="label">Inbox</property>
+        <child>
+          <object class="GtkTextView" id="m_recv">
+            <property name="visible">True</property>
+            <property name="can_focus">True</property>
+            <property name="hexpand">False</property>
+            <property name="vexpand">False</property>
+            <property name="width-request">200</property>
+            <property name="height-request">10</property>
+          </object>
+        </child>
+      </object>
+    </child>
+    <child>
+        <object class="GtkButton" id="fight_button">
+            <property name="label">Fight</property>
+            <property name="visible">True</property>
+            <property name="can_focus">True</property>
+            <property name="halign">center</property>
+            <property name="valign">center</property>
+            <property name="hexpand">False</property>
+            <property name="vexpand">False</property>
+            <property name="width_request">100</property>
+            <property name="height_request">20</property>
+        </object>
+    </child> 
+      
+      </object>
+        </child>
+   <child>
+  <object class="GtkBox" id="horizontal_box">
+    <property name="visible">True</property>
+    <property name="can_focus">False</property>
+    <property name="orientation">horizontal</property>
+
+    <child>
+      <object class="GtkFrame" id="textview_frame">
+        <property name="visible">True</property>
+        <property name="label">Game View</property>
+        <child>
+          <object class="GtkTextView" id="textview">
+            <property name="visible">True</property>
+            <property name="can_focus">True</property>
+            <property name="hexpand">True</property>
+            <property name="vexpand">True</property>
+            <property name="width-request">200</property>
+            <property name="height-request">50</property>
+          </object>
+        </child>
+      </object>
+    </child>
+
+    <child>
+      <object class="GtkFrame" id="roomview_frame">
+        <property name="visible">True</property>
+        <property name="label">Room View</property>
+        <child>
+          <object class="GtkTextView" id="roomview">
+            <property name="visible">True</property>
+            <property name="can_focus">True</property>
+            <property name="hexpand">True</property>
+            <property name="vexpand">True</property>
+            <property name="width-request">200</property>
+            <property name="height-request">50</property>
+          </object>
+        </child>
+      </object>
+    </child>
+
+   
+
+  </object>
+</child>
+
+      <child>
+  <object class="GtkBox" id="player_box">
+    <property name="visible">True</property>
+    <property name="can_focus">False</property>
+    <property name="orientation">horizontal</property>
+
+    <child>
+      <object class="GtkFrame" id="playerview_frame">
+        <property name="visible">True</property>
+        <property name="label">Game updates</property>
+        <child>
+          <object class="GtkTextView" id="playerview">
+            <property name="visible">True</property>
+            <property name="can_focus">True</property>
+            <property name="hexpand">True</property>
+            <property name="vexpand">True</property>
+            <property name="width-request">200</property>
+            <property name="height-request">50</property>
+          </object>
+        </child>
+      </object>
+    </child>
+
+    <child>
+      <object class="GtkFrame" id="monsterview_frame">
+        <property name="visible">True</property>
+        <property name="label">Fight Tracker</property>
+        <child>
+          <object class="GtkTextView" id="fightview">
+            <property name="visible">True</property>
+            <property name="can_focus">True</property>
+            <property name="hexpand">True</property>
+            <property name="vexpand">True</property>
+            <property name="width-request">200</property>
+            <property name="height-request">50</property>
+          </object>
+        </child>
+      </object>
+    </child>
+
+  </object>
+</child>
+
+        
+        </object>
+        </child>
+      </object>
+    </child>
+  </object>
+</interface>
